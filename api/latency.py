@@ -27,7 +27,7 @@ class RequestBody(BaseModel):
     regions: list[str]
     threshold_ms: float                         
 
-@app.post("/")
+@app.post("/api/latency")
 def latency_metrics(body: RequestBody):
     response = {}
 
